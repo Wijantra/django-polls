@@ -1,4 +1,4 @@
-# Django polls
+# django-polls
 
 by Wijantra Cojamnong
 
