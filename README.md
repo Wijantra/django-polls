@@ -6,6 +6,6 @@ Do the Django Tutorial parts 1 - 5 at Django from [Getting Started](https://docs
 
 And add 2 polls.
 
-### Which bubble tea brand do you like the most
+1. Which bubble tea brand do you like the most
 
-###Which ice cream flavor do you like the most
+2. Which ice cream flavor do you like the most
