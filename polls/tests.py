@@ -7,6 +7,7 @@ from django.urls import reverse
 from .models import Question
 # Create your tests here.
 
+
 class QuestionModelTests(TestCase):
 
     def test_was_published_recently_with_old_question(self):
@@ -90,6 +91,7 @@ class QuestionIndexViewTests(TestCase):
             response.context['latest_question_list'],
             ['<Question: Past question.>']
         )
+
 
     def test_two_past_questions(self):
         """
