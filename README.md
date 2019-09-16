@@ -1,6 +1,20 @@
-# django-polls
+ ## Django Polls Application
+ (describe the application)
 
-by Wijantra Cojamnong
+Web application from Django tutorial project that user can vote on polls.
 
-Do the Django Tutorial parts 1 - 5 at Django from [Getting Started](https://docs.djangoproject.com/en/2.2/intro/).
+ ## Requirements
+
+ The application requires
+ * Python 3.6 or newer
+ * Django 2.1.2 or newer
+ * Python add-on modules as in [requirements.txt](requirements.txt)
+
+ ## Running
+
+ (how to run the application, briefly)
+
+1. Access directory to project on terminal
+2. Type python manage.py runserver
+3. Open the page
 
