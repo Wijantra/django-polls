@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY', default="secret")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast = bool)
+DEBUG = config('DEBUG', cast = bool, default=True)
 
 ALLOWED_HOSTS = []
 
@@ -51,13 +51,21 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+AUTHENTICATION_BACKENDS = (
+    # username/password authentication
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 ROOT_URLCONF = 'mysite.urls'
+
+LOGIN_REDIRECT_URL = '/polls/'
+
+LOGOUT_REDIRECT_URL = '/polls/'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
